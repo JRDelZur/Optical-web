@@ -1,0 +1,56 @@
+.sable-laser {
+  width: 30px;
+  height: 700px;
+  background: linear-gradient(to right, #6b00b3
+ 0%, #ffffff 30%, #ffffff 65%, #6b00b3
+ 100%);
+  border-radius: 20px;
+  filter: blur(5px);
+  animation: appear 0.7s ease-in;
+  transform-origin: 50% 100%;
+}
+
+.sable-laser::after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: #6b00b3
+;
+  transform: scaleX(1);
+  filter: blur(20px);
+  animation: brightness 0.7s infinite alternate;
+}
+
+@keyframes brightness {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(1.2);
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(107, 0, 179);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(92, 0, 153);
+}
