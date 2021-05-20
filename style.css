@@ -1,15 +1,16 @@
 .sable-laser {
-  width: 30px;
-  height: 700px;
-  background: linear-gradient(to right, #6b00b3
- 0%, #ffffff 30%, #ffffff 65%, #6b00b3
+  width: 1300px;
+  height: 15px;
+  margin-left: 1.71%;
+  margin-bottom: 5%;
+  background: linear-gradient(to right, #7f00d4
+ 0%, #9900ff 30%, #9900ff 65%, #7f00d4
  100%);
   border-radius: 20px;
   filter: blur(5px);
   animation: appear 0.7s ease-in;
   transform-origin: 50% 100%;
 }
-
 .sable-laser::after {
   content: '';
   position: absolute;
@@ -22,21 +23,47 @@
   animation: brightness 0.7s infinite alternate;
 }
 
+.sable-laser2 {
+  width: 1300px;
+  height: 15px;
+  margin-left: 1.71%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: linear-gradient(to right, #7f00d4
+ 0%, #ff00ea 30%, #ff00ea 65%, #7f00d4
+ 100%);
+  border-radius: 20px;
+  filter: blur(5px);
+  animation: appear 0.7s ease-in;
+  transform-origin: 50% 100%;
+}
+.sable-laser2::after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: #ad00b3
+;
+  transform: scaleX(1);
+  filter: blur(20px);
+  animation: brightness 0.7s infinite alternate;
+}
+
 @keyframes brightness {
   from {
     transform: scaleX(1);
   }
   to {
-    transform: scaleX(1.2);
+    transform: scaleX(1.05);
   }
 }
 
 @keyframes appear {
   from {
-    transform: scaleY(0);
+    transform: scaleX(0);
   }
   to {
-    transform: scaleY(1);
+    transform: scaleX(1);
   }
 }
 
@@ -54,3 +81,65 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(92, 0, 153);
 }
+
+.titulos{
+  color: ghostwhite;
+  font-size: 49px;
+  margin-left: 30px;
+}
+.titulos1{
+  color: ghostwhite;
+  font-size: 30px;
+  text-align: center;
+}
+
+.btn{
+  border: 5px solid #ffffff;
+  padding: 15px;
+  color: #e7e7e7;
+  font-family:Arial;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: #000;
+  margin-left: 30px;
+}
+.btn:hover{
+  color: rgb(46, 46, 46);
+  padding: 15px;
+  border-radius: 3px;
+  position: relative;
+  transition: all 1125ms ease;
+  border: 5px solid rgb(46, 46, 46);
+  background-color: #fff;
+}
+
+.boton {
+  border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+  padding: 10px; /*espacio alrededor texto*/
+  background-color: #2e518b; /*color botón*/
+  color: #ffffff; /*color texto*/
+  text-decoration: none; /*decoración texto*/
+  text-transform: uppercase; /*capitalización texto*/
+  font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+  border-radius: 50px; /*bordes redondos*/
+  }
+  .boton1 {
+    border: 1px solid #2e7d8b; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #2e7d8b; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    }
+    .boton2 {
+      border: 1px solid #8b2e2e; /*anchura, estilo y color borde*/
+      padding: 10px; /*espacio alrededor texto*/
+      background-color: #8b2e2e; /*color botón*/
+      color: #ffffff; /*color texto*/
+      text-decoration: none; /*decoración texto*/
+      text-transform: uppercase; /*capitalización texto*/
+      font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+      border-radius: 50px; /*bordes redondos*/
+      }
